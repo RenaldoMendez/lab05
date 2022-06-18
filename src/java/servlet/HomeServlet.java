@@ -18,11 +18,11 @@ public class HomeServlet extends HttpServlet {
         HttpSession session = request.getSession();
         
     
-        
-        if( session.getAttribute("userName") == null ){
-	response.sendRedirect("login");
+        //check if user is trying to access home page without logging in
+        if(session.getAttribute("username") == null ){
+	response.sendRedirect("login");//redirect them to the login page
         return;
-        }
+    }
 
         getServletContext().getRequestDispatcher("/WEB-INF/home.jsp").forward(request, response);
     }

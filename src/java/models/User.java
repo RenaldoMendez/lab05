@@ -5,15 +5,8 @@ package models;
 public class User {
     String username;
     String password;
-
-    public User() {
-    }
-
-    public User(String username, Object object) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
    
-    public void User(String username, String password){
+    public User(String username, String password){
         this.username = username;
         this.password = password;
     }

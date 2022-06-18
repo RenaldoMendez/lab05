@@ -10,11 +10,12 @@
         <br>
         <form action="login" method="post">
             <label>Username:</label>
-            <input type="text" name="user_name" value="${userName}"><br>
+            <input type="text" name="user_name" value="${preloadusername}"><br>
             <label>Password:</label>
-            <input type="text" name="pass_word" value="${passWord}">
+            <input type="text" name="pass_word" value="${preloapassword}"><br>
             <input type="submit" value="Log in">
-            <p>${errormessage}</p>
+            <p>${emptyFields}</p>
+            <p>${invalidLogin}</p>
             <p>${loggedOutMessage}</p>
         </form>
     </body>
